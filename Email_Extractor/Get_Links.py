@@ -3,6 +3,7 @@ import re
 from bs4 import BeautifulSoup
 from Get_Email import Get_Email
 
+
 class Get_Links(object):
 
     # Constructor
@@ -17,12 +18,13 @@ class Get_Links(object):
         # Get HTML
         _Response = requests.get(self.Url)
 
-        # HTML 
+        # HTML
         _Beautiful_Soup = BeautifulSoup(_Response.text, 'html.parser')
 
         # Finding a Link in HTML
-        self.__All_Links = [a.attrs.get('href') for a in _Beautiful_Soup.select('a[href]')]
-        
+        self.__All_Links = [a.attrs.get('href')
+                            for a in _Beautiful_Soup.select('a[href]')]
+
         # Remove Duplicates
         self.__All_Links = set(self.__All_Links)
 
@@ -37,8 +39,8 @@ class Get_Links(object):
                 # Get HTML
                 _Response = requests.get(_Link)
 
-                # HTML 
-                _Beautiful_Soup = BeautifulSoup(_Response.text,'html.parser')
+                # HTML
+                _Beautiful_Soup = BeautifulSoup(_Response.text, 'html.parser')
 
                 # Search Email
                 Email.Search_Email(_Beautiful_Soup)

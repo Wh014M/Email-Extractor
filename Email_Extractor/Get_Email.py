@@ -1,5 +1,6 @@
 import re
 
+
 class Get_Email(object):
 
     # Constructor
@@ -24,7 +25,7 @@ class Get_Email(object):
 
             # Check Regex
             if(bool(re.match(EMAIL_REGEX, Email_Text))):
-                    
+
                 if(Email_Text not in self.__Emails):
                     print(Email_Text)
 
