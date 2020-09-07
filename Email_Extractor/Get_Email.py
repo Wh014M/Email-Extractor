@@ -20,13 +20,13 @@ class Get_Email(object):
         for Name in _Beautiful_Soup.find_all('a'):
 
             # Text
-                Email_Text = Name.text
+            Email_Text = Name.text
 
-                # Check Regex
-                if(bool(re.match(EMAIL_REGEX, Email_Text))):
+            # Check Regex
+            if(bool(re.match(EMAIL_REGEX, Email_Text))):
                     
-                    if(Email_Text not in self.__Emails):
-                        print(Email_Text)
+                if(Email_Text not in self.__Emails):
+                    print(Email_Text)
 
-                    # Add Email to List
-                    self.__Emails.append(Email_Text)
+                # Add Email to List
+                self.__Emails.append(Email_Text)
