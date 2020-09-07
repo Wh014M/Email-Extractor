@@ -8,13 +8,6 @@ class Get_Email(object):
         # Mails [Private]
         self.__Emails = []
 
-    # Get Email
-    @property
-    def Get_Email(self):
-
-        # Return
-        return self.__Emails
-
     # Search Email
     def Search_Email(self, _Beautiful_Soup):
 
@@ -26,10 +19,7 @@ class Get_Email(object):
 
         for Name in _Beautiful_Soup.find_all('a'):
 
-            # Check
-            if(Name is not None):
-
-                # Text
+            # Text
                 Email_Text = Name.text
 
                 # Check Regex
