@@ -127,5 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/.vs/Email-Extractor/v16
+
+# Other
 /.vs
