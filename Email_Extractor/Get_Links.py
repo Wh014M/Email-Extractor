@@ -28,6 +28,9 @@ class Get_Links(object):
         # Remove Duplicates
         self.__All_Links = set(self.__All_Links)
 
+    # Sort Url
+    def Sort_Url(self):
+
         # Get_Email [Object]
         Email = Get_Email()
 

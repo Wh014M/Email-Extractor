@@ -10,6 +10,9 @@ def main():
     # Search Links
     Link.Search_Links()
 
+    # Sort Url
+    Link.Sort_Url()
+
 
 # Check
 if __name__ == "__main__":
