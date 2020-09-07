@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2f6f3228-70f7-4e3c-ae7b-ad6524339422</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Main.py</StartupFile>
+    <StartupFile>Email_Extractor.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,7 +27,7 @@
   <ItemGroup>
     <Compile Include="Get_Email.py" />
     <Compile Include="Get_Links.py" />
-    <Compile Include="Main.py" />
+    <Compile Include="Email_Extractor.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
