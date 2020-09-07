@@ -32,18 +32,9 @@ class Get_Email(object):
                 # Text
                 Email_Text = Name.text
 
-                # Regex Email
-                Regex = bool(re.match(EMAIL_REGEX, Email_Text))
-
-                # Check
-                if('@' in Email_Text and Regex == True):
-
-                    # Replace
-                    Email_Text = Email_Text.replace(" ",'').replace('\r','')
-
-                    # Replace
-                    Email_Text = Email_Text.replace('\n','').replace('\t','')
-
+                # Check Regex
+                if(bool(re.match(EMAIL_REGEX, Email_Text))):
+                    
                     if(Email_Text not in self.__Emails):
                         print(Email_Text)
 
