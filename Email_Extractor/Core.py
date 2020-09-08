@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from Get_Email import Get_Email
 
+
 class Core(object):
     # Constructor
     def __init__(self, _All_Links):
@@ -27,5 +28,3 @@ class Core(object):
                     Email.Search_Email(_HTML)
         except Exception:
             pass
-
-
