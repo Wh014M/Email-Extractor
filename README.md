@@ -7,5 +7,5 @@
 # Email-Extractor
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Email-Extractor)](LICENSE)
 
-## License
+## :page_with_curl: License
 Email-Extractor is distributed under the [MIT License](LICENSE).
