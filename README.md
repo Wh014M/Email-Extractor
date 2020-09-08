@@ -10,13 +10,14 @@
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Email-Extractor)](LICENSE)
 
 ## 📃 Requirements
-* ✔️ beautifulsoup4
-* ✔️ certifi
-* ✔️ chardet
-* ✔️ idna
-* ✔️ requests
-* ✔️ soupsieve
-* ✔️ urllib3
+* Library
+ * ✔️ beautifulsoup4
+ * ✔️ certifi
+ * ✔️ chardet
+ * ✔️ idna
+ * ✔️ requests
+ * ✔️ soupsieve
+ * ✔️ urllib3
   
 ## 📃 License
 ➜ Email-Extractor is distributed under the [MIT License](LICENSE).
