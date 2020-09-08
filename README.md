@@ -5,6 +5,7 @@
  Email-Extractor is ONLY intended to be used on your own pentesting labs, or with explicit consent from the owner of the property being tested.** 
 
 ## Email-Extractor
+[![Build status](https://ci.appveyor.com/api/projects/status/142iqgmg4k0p6ejw?svg=true)](https://ci.appveyor.com/project/kadzicuh/email-extractor)
 [![Version](https://img.shields.io/badge/Email_Extractor-1.0-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
 [![Maintainability](https://api.codeclimate.com/v1/badges/654e3a63d2fc19072732/maintainability)](https://codeclimate.com/github/kadzicuh/Email-Extractor/maintainability)
