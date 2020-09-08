@@ -8,7 +8,7 @@ class Get_Email(object):
         self.__Emails = []
 
     # Search Email
-    def Search_Email(self, _Beautiful_Soup):
+    def Search_Email(self, _HTML):
         # Email Regex
         EMAIL_REGEX = r"""(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|
                           \\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|
@@ -17,7 +17,7 @@ class Get_Email(object):
 
         try:
             # Finding links in HTML <a></a>
-            for _Email in _Beautiful_Soup.find_all('a'):
+            for _Email in _HTML.find_all('a'):
                 # Regex Check
                 if bool(re.match(EMAIL_REGEX, _Email.text)):
                     # Email Output to Console
