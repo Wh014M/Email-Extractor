@@ -5,7 +5,7 @@
  Email-Extractor is ONLY intended to be used on your own pentesting labs, or with explicit consent from the owner of the property being tested.** 
 
 # Email-Extractor
-[![Version](https://img.shields.io/badge/Email-Extractor-1.0-brightgreen.svg?maxAge=259200)]()
+[![Version](https://img.shields.io/badge/Email_Extractor-1.0-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Email-Extractor)](LICENSE)
 
