@@ -10,7 +10,7 @@
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Email-Extractor)](LICENSE)
 
 ## 📃 Requirements
-* 📌 Library
+* 📌 Libraries
   * ✔️ beautifulsoup4
   * ✔️ certifi
   * ✔️ chardet
