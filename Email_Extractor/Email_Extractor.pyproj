@@ -25,6 +25,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Core.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Get_Email.py" />
     <Compile Include="Get_Links.py" />
     <Compile Include="Email_Extractor.py" />

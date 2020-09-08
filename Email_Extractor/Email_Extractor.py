@@ -1,16 +1,20 @@
 from Get_Links import Get_Links
+from Core import Core
 
 
 # Main
 def main():
-    # Get_Links [Object]
-    Link = Get_Links('http://akipress.org')
+    # Get_Links Class Instance [Object]
+    _Links = Get_Links('http://akipress.org')
 
     # Search Links
-    Link.Search_Links()
+    _Links.Search_Links()
 
-    # Sort Url
-    Link.Sort_Url()
+    # Core Class Instance [Object]
+    _Core = Core(_Links._Get_Links__All_Links)
+
+    # Links
+    _Core.Links()
 
 
 # Check
