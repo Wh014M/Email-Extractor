@@ -7,19 +7,19 @@ class Get_Links(object):
     # Constructor
     def __init__(self, _Url):
 
-        # Url [Public]
-        self.Url = _Url
+        # Url [Private]
+        self.__Url = _Url
 
     # Search Links
     def Search_Links(self):
         try:
             # Get HTML
-            _Beautiful_Soup = BeautifulSoup(
-                requests.get(self.Url).text, 'html.parser')
+            _HTML = BeautifulSoup(
+                requests.get(self.__Url).text, 'html.parser')
 
-            # Finding a Link in HTML
+            # Finding links in HTML <a href=""></a>
             self.__All_Links = [a.attrs.get('href')
-                                for a in _Beautiful_Soup.select('a[href]')]
+                                for a in _HTML.select('a[href]')]
 
             # Remove Duplicates
             self.__All_Links = set(self.__All_Links)
@@ -28,19 +28,20 @@ class Get_Links(object):
 
     # Sort Url
     def Sort_Url(self):
-        # Get_Email [Object]
+        # Get_Email Class Instance [Object]
         Email = Get_Email()
 
         try:
+            # Iterating over references in a loop
             for _Link in self.__All_Links:
-                # Check Url
-                if(_Link.startswith("http") or _Link.startswith("www")):
+                # Checks URL [HTTP or WWW]
+                if _Link.startswith("http") or _Link.startswith("www"):
 
                     # Get HTML
-                    _Beautiful_Soup = BeautifulSoup(
+                    _HTML = BeautifulSoup(
                         requests.get(_Link).text, 'html.parser')
 
                     # Search Email
-                    Email.Search_Email(_Beautiful_Soup)
+                    Email.Search_Email(_HTML)
         except Exception:
             pass
