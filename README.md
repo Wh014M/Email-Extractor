@@ -7,6 +7,7 @@
 ## Email-Extractor
 [![Version](https://img.shields.io/badge/Email_Extractor-1.0-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
+[![Maintainability](https://api.codeclimate.com/v1/badges/654e3a63d2fc19072732/maintainability)](https://codeclimate.com/github/kadzicuh/Email-Extractor/maintainability)
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Email-Extractor)](LICENSE)
 
 ## 📃 Requirements
