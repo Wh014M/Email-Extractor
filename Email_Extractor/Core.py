@@ -9,7 +9,7 @@ class Core(object):
         # All Links [Private]
         self.__All_Links = _All_Links
 
-        # Get_Email Class Instance Object [Private]
+        # Get_Email Class Instance [Private]
         self.__Email = Get_Email()
 
     # Links
@@ -19,7 +19,6 @@ class Core(object):
             for _Link in self.__All_Links:
                 # True if the link starts with HTTP or WWW
                 if _Link.startswith(("http", "www")):
-
                     # Get HTML
                     _HTML = BeautifulSoup(
                         requests.get(_Link).text, 'html.parser')
