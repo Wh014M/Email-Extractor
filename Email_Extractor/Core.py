@@ -21,8 +21,7 @@ class Core(object):
                 # True if the link starts with HTTP or WWW
                 if _Link.startswith(("http", "www")):
                     # Get HTML
-                    _HTML = BeautifulSoup(
-                        requests.get(_Link).text, 'html.parser')
+                    _HTML = BeautifulSoup(requests.get(_Link).text, "html.parser")
 
                     # Search Email
                     self.__Email.Search_Email(_HTML)

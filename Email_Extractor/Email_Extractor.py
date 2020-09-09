@@ -5,7 +5,7 @@ from Core import Core
 # Main
 def main():
     # Get_Links Class Instance
-    _Links = Get_Links('http://akipress.org')
+    _Links = Get_Links("http://akipress.org")
 
     # Search Links
     _Links.Search_Links()

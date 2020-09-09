@@ -17,7 +17,7 @@ class Get_Email(object):
     def Search_Email(self, _HTML):
         try:
             # Finding links in HTML <a></a>
-            for _Email in _HTML.find_all('a'):
+            for _Email in _HTML.find_all("a"):
                 # True if the string matches this type EmailName@DomainName
                 if bool(re.match(self.__EMAIL_REGEX, _Email.text)):
                     # Add Email to List

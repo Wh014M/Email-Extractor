@@ -15,12 +15,10 @@ class Get_Links(object):
     def Search_Links(self):
         try:
             # Get HTML
-            _HTML = BeautifulSoup(
-                requests.get(self.__Url).text, 'html.parser')
+            _HTML = BeautifulSoup(requests.get(self.__Url).text, "html.parser")
 
             # Finding links in HTML <a href=""></a>
-            self.__All_Links = [a.attrs.get('href')
-                                for a in _HTML.select('a[href]')]
+            self.__All_Links = [a.attrs.get("href") for a in _HTML.select("a[href]")]
 
             # Remove Duplicates
             self.__All_Links = set(self.__All_Links)
