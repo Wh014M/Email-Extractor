@@ -6,9 +6,12 @@ from Get_Email import Get_Email
 
 class Core(object):
     # Constructor
-    def __init__(self, _All_Links):
+    def __init__(self, _All_Links, _Url):
         # All Links [Private]
         self.__All_Links = _All_Links
+
+        # Url [Private]
+        self.__Url = _Url
 
         # Get_Email Class Instance [Private]
         self.__Email = Get_Email()
@@ -17,11 +20,18 @@ class Core(object):
     def Links(self):
         try:
             # Iterating over references in a loop
-            for _Link in tqdm(set(self.__All_Links), desc="Progress"):
+            for _Link in tqdm(set(self.__All_Links), desc=self.__Url):
                 # True if the link starts with HTTP or WWW
                 if _Link.startswith(("http", "www")):
                     # Get HTML
                     _HTML = BeautifulSoup(requests.get(_Link).text, "html.parser")
+
+                    # Search Email
+                    self.__Email.Search_Email(_HTML)
+
+                else:
+                    # Get HTML
+                    _HTML = BeautifulSoup(requests.get(self.__Url + _Link).text, "html.parser")
 
                     # Search Email
                     self.__Email.Search_Email(_HTML)
