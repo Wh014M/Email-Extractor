@@ -19,9 +19,6 @@ class Get_Links(object):
 
             # Finding links in HTML <a href=""></a>
             self.__All_Links = [a.attrs.get("href") for a in _HTML.select("a[href]")]
-
-            # Remove Duplicates
-            self.__All_Links = set(self.__All_Links)
         except Exception:
             pass
 

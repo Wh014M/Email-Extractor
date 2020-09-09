@@ -17,7 +17,7 @@ class Core(object):
     def Links(self):
         try:
             # Iterating over references in a loop
-            for _Link in tqdm(self.__All_Links, desc="Progress"):
+            for _Link in tqdm(set(self.__All_Links), desc="Progress"):
                 # True if the link starts with HTTP or WWW
                 if _Link.startswith(("http", "www")):
                     # Get HTML
