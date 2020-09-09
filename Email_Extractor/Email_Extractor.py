@@ -4,13 +4,13 @@ from Core import Core
 
 # Main
 def main():
-    # Get_Links Class Instance [Object]
+    # Get_Links Class Instance Object
     _Links = Get_Links('http://akipress.org')
 
     # Search Links
     _Links.Search_Links()
 
-    # Core Class Instance [Object]
+    # Core Class Instance Object
     _Core = Core(_Links._Get_Links__All_Links)
 
     # Links
