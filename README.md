@@ -11,6 +11,8 @@
 [![GitHub](https://img.shields.io/github/license/kadzicuh/Email-Extractor)](LICENSE)
 
 ## 📃 Requirements
+* 📌 Python
+  * ✔️ >= 3.7
 * 📌 Libraries
   * ✔️ beautifulsoup4
   * ✔️ certifi
