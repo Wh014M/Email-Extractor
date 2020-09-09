@@ -9,11 +9,11 @@ class Core(object):
         # All Links [Private]
         self.__All_Links = _All_Links
 
+        # Get_Email Class Instance [Object]
+        self.Email = Get_Email()
+
     # Links
     def Links(self):
-        # Get_Email Class Instance [Object]
-        Email = Get_Email()
-
         try:
             # Iterating over references in a loop
             for _Link in self.__All_Links:
@@ -25,6 +25,6 @@ class Core(object):
                         requests.get(_Link).text, 'html.parser')
 
                     # Search Email
-                    Email.Search_Email(_HTML)
+                    self.Email.Search_Email(_HTML)
         except Exception:
             pass
