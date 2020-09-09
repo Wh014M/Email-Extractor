@@ -20,11 +20,12 @@ class Get_Email(object):
             for _Email in _HTML.find_all('a'):
                 # True if the string matches this type EmailName@DomainName
                 if bool(re.match(self.__EMAIL_REGEX, _Email.text)):
-                    if _Email.text not in self.__Emails:
-                        # Email Output to Console
-                        print(_Email.text)
-
                     # Add Email to List
                     self.__Emails.append(_Email.text)
         except Exception:
             pass
+
+    # Get __Emails
+    @property
+    def Emails(self):
+        return self.__Emails

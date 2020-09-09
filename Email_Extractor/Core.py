@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 from Get_Email import Get_Email
 
 
@@ -16,7 +17,7 @@ class Core(object):
     def Links(self):
         try:
             # Iterating over references in a loop
-            for _Link in self.__All_Links:
+            for _Link in tqdm(self.__All_Links, desc="Progress"):
                 # True if the link starts with HTTP or WWW
                 if _Link.startswith(("http", "www")):
                     # Get HTML
@@ -25,5 +26,9 @@ class Core(object):
 
                     # Search Email
                     self.__Email.Search_Email(_HTML)
+
+            print("\nResult:")
+            for _Email in set(self.__Email._Get_Email__Emails):
+                print(_Email)
         except Exception:
             pass
