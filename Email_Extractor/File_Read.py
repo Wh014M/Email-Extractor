@@ -4,10 +4,13 @@ class File_Read(object):
         self.__URL = []
 
     def File_R(self):
-        # Read text from file
-        File = open(input(">> File: "), "r")
-        # List with URL
-        self.__URL = [Url.strip() for Url in File.readlines()]
+        try:
+            # Read text from file
+            File = open(input(">> File: "), "r")
+            # List with URL
+            self.__URL = [Url.strip() for Url in File.readlines()]
+        except Exception:
+            pass
 
     @property
     def URL(self):
