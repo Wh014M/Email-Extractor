@@ -4,10 +4,15 @@ from Core import Core
 def main():
     # Core Class Instance
     _Core = Core()
-    # Set Url
-    _Core.Url("https://limon.kg/")
+    # File
+    File = open(input("File: "), 'r')
+    # Urls
+    Urls = [Url.strip() for Url in File.readlines()]
+    for Url in set(Urls):
+        # Set Url
+        _Core.Url(Url)
 
-    for Email in _Core._Core__Emails:
+    for Email in set(_Core._Core__Emails):
         print(Email)
 
 
