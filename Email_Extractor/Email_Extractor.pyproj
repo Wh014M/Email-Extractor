@@ -27,6 +27,12 @@
     <Compile Include="Core.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="File_Read.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File_Write.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Get_Email.py" />
     <Compile Include="Get_Links.py" />
     <Compile Include="Email_Extractor.py" />

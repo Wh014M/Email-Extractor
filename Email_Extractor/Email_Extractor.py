@@ -1,24 +1,24 @@
 import os
 from Core import Core
+from File_Read import File_Read
+from File_Write import File_Write
 
 
 def main():
     try:
         # Core Class Instance
         _Core = Core()
-        # File
-        File = open(input("File: "), 'r')
-        # Urls
-        Urls = [Url.strip() for Url in File.readlines()]
-        for Url in set(Urls):
+        # File_Read Class Instance
+        _File_Read = File_Read()
+        # File_Write Class Instance
+        _File_Write = File_Write()
+        # Read text from file
+        _File_Read.File_R()
+        for URL in set(_File_Read._File_Read__URL):
             # Set Url
-            _Core.Url(Url)
-        # Clear Console
-        Clear = lambda: os.system('cls' if os.name=='nt' else 'clear')
-        Clear()
-        # Output
-        for Email in set(_Core._Core__Emails):
-            print(Email)
+            _Core.Url(URL)
+        # Write text to file
+        _File_Write.File_W(_Core._Core__Emails)
     except Exception:
         pass
 

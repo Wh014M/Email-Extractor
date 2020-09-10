@@ -14,12 +14,13 @@ class Core(object):
         # Emails [Private]
         self.__Emails = []
 
-    def Url(self, _Url):
+    def Url(self, _URL):
         try:
             # Search Links
-            self.__Get_Links.Search_Links(_Url)
+            self.__Get_Links.Search_Links(_URL)
             # Iterating over references in a loop
-            for Link in tqdm(set(self.__Get_Links._Get_Links__All_Links), desc=_Url):
+            for Link in tqdm(
+                set(self.__Get_Links._Get_Links__All_Links), desc=">> " + _URL):
                 # True if the link starts with HTTP or WWW
                 if Link.startswith(("http", "www")):
                     # Get HTML
@@ -28,7 +29,7 @@ class Core(object):
                     self.__Get_Email.Search_Email(HTML)
                 else:
                     # Get HTML
-                    HTML = BeautifulSoup(requests.get(_Url + Link).text, "html.parser")
+                    HTML = BeautifulSoup(requests.get(_URL + Link).text, "html.parser")
                     # Search Email
                     self.__Get_Email.Search_Email(HTML)
             # Add Email to List
