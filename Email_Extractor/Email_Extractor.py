@@ -1,7 +1,6 @@
 from Core import Core
 
 
-# Main
 def main():
     # Core Class Instance
     _Core = Core()
@@ -12,6 +11,5 @@ def main():
         print(Email)
 
 
-# Check
 if __name__ == "__main__":
     main()
