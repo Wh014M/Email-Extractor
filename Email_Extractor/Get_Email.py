@@ -19,7 +19,6 @@ class Get_Email(object):
         except Exception:
             pass
 
-    # Get __Emails
     @property
     def Emails(self):
         return self.__Emails

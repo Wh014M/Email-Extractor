@@ -5,8 +5,8 @@ from Core import Core
 def main():
     # Core Class Instance
     _Core = Core()
-    # Links
-    _Core.Links("https://limon.kg/")
+    # Set Url
+    _Core.Url("https://limon.kg/")
 
 
 # Check

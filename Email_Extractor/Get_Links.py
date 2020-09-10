@@ -16,7 +16,6 @@ class Get_Links(object):
         except Exception:
             pass
 
-    # Get __All_Links
     @property
     def All_Links(self):
         return self.__All_Links

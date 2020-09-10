@@ -12,7 +12,7 @@ class Core(object):
         # Get_Links Class Instance [Private]
         self.__Links = Get_Links()
 
-    def Links(self, _Url):
+    def Url(self, _Url):
         try:
             # Search Links
             self.__Links.Search_Links(_Url)
