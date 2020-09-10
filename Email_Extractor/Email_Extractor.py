@@ -4,10 +4,10 @@ from Core import Core
 # Main
 def main():
     # Core Class Instance
-    _Core = Core("https://limon.kg/")
+    _Core = Core()
 
     # Links
-    _Core.Links()
+    _Core.Links("https://limon.kg/")
 
 
 # Check
