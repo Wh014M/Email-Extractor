@@ -8,29 +8,34 @@ from Get_Email import Get_Email
 class Core(object):
     def __init__(self):
         # Get_Email Class Instance [Private]
-        self.__Email = Get_Email()
+        self.__Get_Email = Get_Email()
         # Get_Links Class Instance [Private]
-        self.__Links = Get_Links()
+        self.__Get_Links = Get_Links()
+        # Emails [Private]
+        self.__Emails = []
 
     def Url(self, _Url):
         try:
             # Search Links
-            self.__Links.Search_Links(_Url)
+            self.__Get_Links.Search_Links(_Url)
             # Iterating over references in a loop
-            for Link in tqdm(set(self.__Links._Get_Links__All_Links), desc=_Url):
+            for Link in tqdm(set(self.__Get_Links._Get_Links__All_Links), desc=_Url):
                 # True if the link starts with HTTP or WWW
                 if Link.startswith(("http", "www")):
                     # Get HTML
                     HTML = BeautifulSoup(requests.get(Link).text, "html.parser")
                     # Search Email
-                    self.__Email.Search_Email(HTML)
+                    self.__Get_Email.Search_Email(HTML)
                 else:
                     # Get HTML
                     HTML = BeautifulSoup(requests.get(_Url + Link).text, "html.parser")
                     # Search Email
-                    self.__Email.Search_Email(HTML)
-            # Output
-            for Email in set(self.__Email._Get_Email__Emails):
-                print(Email)
+                    self.__Get_Email.Search_Email(HTML)
+            # Add Email to List
+            self.__Emails += set(self.__Get_Email._Get_Email__Emails)
         except Exception:
             pass
+
+    @property
+    def Emails(self):
+        return self.__Emails
