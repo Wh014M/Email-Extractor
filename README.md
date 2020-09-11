@@ -23,7 +23,12 @@
   * ✔️ soupsieve
   * ✔️ urllib3
   * ✔️ tqdm
- 
+
+## 📃 Usage:
+```
+python Email_Extractor.py
+```
+
 ## 📃 Screenshot:
 ![Screenshot](Screenshot.png)
 
