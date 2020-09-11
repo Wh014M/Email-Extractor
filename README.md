@@ -24,8 +24,10 @@
   * ✔️ urllib3
   * ✔️ tqdm
 
-## 📃 Usage::
-email_extractor [-h] [-l LIMIT] [-u URL]
+## 📃 Usage:
+usage:: 
+
+  email_extractor [-h] [-l LIMIT] [-u URL]
 
 ## 📃 Screenshot:
 ![Screenshot](Screenshot.png)
