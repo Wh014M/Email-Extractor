@@ -26,6 +26,7 @@
 
 ## 📃 Usage:
 ```
+pip install -r requirements.txt
 python Email_Extractor.py
 ```
 
