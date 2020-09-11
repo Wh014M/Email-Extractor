@@ -31,7 +31,7 @@ pip install -r requirements.txt
 python Email_Extractor.py
 ```
 
-## 📃 Screenshot:
+## 📷 Screenshot:
 ![Screenshot](Screenshot.png)
 
 ## 📃 License
