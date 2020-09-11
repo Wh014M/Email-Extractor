@@ -26,7 +26,7 @@
 
 ## 📃 Usage:
 ```
-python email_extractor.py
+python Email_Extractor.py
 ```
 
 ## 📃 Screenshot:
