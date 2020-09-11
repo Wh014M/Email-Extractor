@@ -5,6 +5,8 @@ from File_Write import File_Write
 
 def main():
     try:
+        # Logo
+        logo()
         # Core Class Instance
         _Core = Core()
         # File_Read Class Instance
@@ -21,6 +23,12 @@ def main():
     except Exception:
         pass
 
-
+def logo():
+    print(r'''
+ ___                       ___     ___  __        __  ___  __   __  
+|__   |\/|  /\  | |    __ |__  \_/  |  |__)  /\  /  `  |  /  \ |__) 
+|___  |  | /~~\ | |___    |___ / \  |  |  \ /~~\ \__,  |  \__/ |  \ 
+                                                                    
+''')
 if __name__ == "__main__":
     main()

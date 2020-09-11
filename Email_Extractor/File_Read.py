@@ -6,7 +6,7 @@ class File_Read(object):
     def File_R(self):
         try:
             # Read text from file
-            with open(input(">>> File: "), "r") as File:
+            with open(input(">>> File with URL: "), "r") as File:
                 # List with URL
                 self.__URL = [Url.strip() for Url in File.readlines()]
         except Exception:
