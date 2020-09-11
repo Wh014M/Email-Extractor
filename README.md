@@ -37,4 +37,4 @@ python Email_Extractor.py
 ![Screenshot](Screenshot.png)
 
 ## 📃 License
-➜ Email-Extractor is distributed under the [MIT License](LICENSE).
+Email-Extractor is distributed under the [MIT License](LICENSE).
