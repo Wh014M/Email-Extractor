@@ -14,7 +14,8 @@ class File_Write(object):
                     File.write(Email)
             # File save path
             print(
-                ">>> File saved: " + os.path.dirname(__file__) + "\\" + self.__File_Name
+                ">>> File saved: " +
+                os.path.dirname(__file__) + "\\" + self.__File_Name
             )
         except Exception:
             pass

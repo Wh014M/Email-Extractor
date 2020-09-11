@@ -25,12 +25,14 @@ class Core(object):
                 # True if the link starts with HTTP or WWW
                 if Link.startswith(("http", "www")):
                     # Get HTML
-                    HTML = BeautifulSoup(requests.get(Link).text, "html.parser")
+                    HTML = BeautifulSoup(
+                        requests.get(Link).text, "html.parser")
                     # Search Email
                     self.__Get_Email.Search_Email(HTML)
                 else:
                     # Get HTML
-                    HTML = BeautifulSoup(requests.get(_URL + Link).text, "html.parser")
+                    HTML = BeautifulSoup(requests.get(
+                        _URL + Link).text, "html.parser")
                     # Search Email
                     self.__Get_Email.Search_Email(HTML)
             # Add Email to List
