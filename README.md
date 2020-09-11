@@ -23,6 +23,9 @@
   * ✔️ soupsieve
   * ✔️ urllib3
   * ✔️ tqdm
-  
+ 
+## 📃 Screenshot:
+![Screenshot](Screenshot.png)
+
 ## 📃 License
 ➜ Email-Extractor is distributed under the [MIT License](LICENSE).
