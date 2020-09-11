@@ -23,7 +23,10 @@
   * ✔️ soupsieve
   * ✔️ urllib3
   * ✔️ tqdm
- 
+
+## 📃 Usage::
+email_extractor [-h] [-l LIMIT] [-u URL]
+
 ## 📃 Screenshot:
 ![Screenshot](Screenshot.png)
 
