@@ -25,7 +25,8 @@
   * ✔️ tqdm
 
 ## 📃 Usage:
-```python email_extractor.py
+```
+python email_extractor.py
 ```
 
 ## 📃 Screenshot:
