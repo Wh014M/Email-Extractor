@@ -25,9 +25,10 @@
   * ✔️ tqdm
 
 ## 📃 Usage:
-usage:: 
+```
+python email_extractor.py
 
-  email_extractor [-h] [-l LIMIT] [-u URL]
+```
 
 ## 📃 Screenshot:
 ![Screenshot](Screenshot.png)
