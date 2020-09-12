@@ -18,7 +18,6 @@ class Core(object):
         try:
             # Search Links
             self.__Get_Links.Search_Links(_URL)
-            # Iterating over references in a loop
             for Link in tqdm(
                 set(self.__Get_Links._Get_Links__All_Links), desc=">>> " + _URL
             ):

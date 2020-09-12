@@ -12,7 +12,6 @@ class File_Write(object):
             with open(self.__File_Name, "w") as File:
                 for Email in _Emails:
                     File.write(Email)
-            # File save path
             print(
                 ">>> File saved: " +
                 os.path.dirname(__file__) + "\\" + self.__File_Name
