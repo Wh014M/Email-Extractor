@@ -36,5 +36,8 @@ python Email_Extractor.py
 ## 📷 Screenshot:
 ![Screenshot](Screenshot.png)
 
+## 🎥 YouTube:
+[![YouTube](https://www.youtube.com/watch?v=Q3ifm0E_3oc)]()
+
 ## 📃 License
 Email-Extractor is distributed under the [MIT License](LICENSE).
