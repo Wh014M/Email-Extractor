@@ -14,7 +14,7 @@ class Core(object):
         # Emails [Private]
         self.__Emails = []
 
-    def Url(self, _URL):
+    def URL(self, _URL):
         try:
             # Search Links
             self.__Get_Links.Search_Links(_URL)
