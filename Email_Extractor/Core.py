@@ -7,11 +7,8 @@ from Get_Email import Get_Email
 
 class Core(object):
     def __init__(self):
-        # Get_Email Class Instance [Private]
         self.__Get_Email = Get_Email()
-        # Get_Links Class Instance [Private]
         self.__Get_Links = Get_Links()
-        # Emails [Private]
         self.__Emails = []
 
     def URL(self, _URL):
@@ -34,7 +31,7 @@ class Core(object):
                         _URL + Link).text, "html.parser")
                     # Search Email
                     self.__Get_Email.Search_Email(HTML)
-            # Add Email to List
+            # Add Emails to List
             self.__Emails += set(self.__Get_Email._Get_Email__Emails)
         except Exception:
             pass

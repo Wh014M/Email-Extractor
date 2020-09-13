@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 
 class Get_Links(object):
     def __init__(self):
-        # All Links [Private]
         self.__All_Links = []
 
     def Search_Links(self, _URL):

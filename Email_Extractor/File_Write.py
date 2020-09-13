@@ -3,7 +3,6 @@ import os
 
 class File_Write(object):
     def __init__(self):
-        # File Name [Private]
         self.__File_Name = "Emails.txt"
 
     def File_W(self, _Emails):

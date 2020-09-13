@@ -1,6 +1,5 @@
 class File_Read(object):
     def __init__(self):
-        # URL [Private]
         self.__URL = []
 
     def File_R(self):
