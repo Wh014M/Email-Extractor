@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.7"
+install:
+  - pip install -r Email_Extractor/requirements.txt
+script: 
+  - python3 Email_Extractor/Email_Extractor.py
