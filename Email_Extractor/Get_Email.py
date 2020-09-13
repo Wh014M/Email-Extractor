@@ -3,8 +3,8 @@ import re
 
 class Get_Email(object):
     def __init__(self):
-        self.__Emails = []
         self.__EMAIL_REGEX = r"""[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"""
+        self.__Emails = []
 
     def Search_Email(self, _HTML):
         try:

@@ -1,6 +1,6 @@
-from Core import Core
-from File_Read import File_Read
 from File_Write import File_Write
+from File_Read import File_Read
+from Core import Core
 
 
 def main():
@@ -16,9 +16,9 @@ def main():
 
 
 if __name__ == "__main__":
-    _Core = Core()
-    _File_Read = File_Read()
     _File_Write = File_Write()
+    _File_Read = File_Read()
+    _Core = Core()
     print(" ___                       ___     ___  __        __  ___  __   __")
     print("|__   |\/|  /\  | |    __ |__  \_/  |  |__)  /\  /  `  |  /  \ |__)")
     print("|___  |  | /~~\ | |___    |___ / \  |  |  \ /~~\ \__,  |  \__/ |  \ \n")

@@ -1,9 +1,9 @@
 import requests
 
-from bs4 import BeautifulSoup
-from tqdm import tqdm
 from Get_Links import Get_Links
 from Get_Email import Get_Email
+from bs4 import BeautifulSoup
+from tqdm import tqdm
 
 
 class Core(object):
