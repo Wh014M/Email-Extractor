@@ -34,7 +34,7 @@ python Email_Extractor.py
 ```
 
 ## 📷 Screenshot:
-![Screenshot](Email-Extractor.PNG)
+![Screenshot](Email-Extractor.png)
 
 ## 🎥 YouTube:
 [![YouTube](https://img.youtube.com/vi/Q3ifm0E_3oc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Q3ifm0E_3oc)
