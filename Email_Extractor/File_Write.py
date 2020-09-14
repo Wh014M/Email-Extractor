@@ -12,7 +12,7 @@ class File_Write(object):
                 for Email in _Emails:
                     File.write(Email)
             print(
-                ">>> File saved: " +
+                "\n>>> File saved: " +
                 os.path.dirname(__file__) + "\\" + self.__File_Name
             )
         except Exception:

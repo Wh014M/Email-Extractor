@@ -10,7 +10,7 @@ def main():
         for URL in set(_File_Read._File_Read__URL):
             _Core.URL(URL)
         # Write text to file
-        _File_Write.File_W(_Core._Core__Emails)
+        _File_Write.File_W(set(_Core._Core__Emails))
     except Exception:
         pass
 
