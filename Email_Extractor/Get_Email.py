@@ -13,7 +13,7 @@ class Get_Email(object):
                 # True if the string matches this type EmailName@DomainName
                 if bool(re.match(self.__EMAIL_REGEX, Email.text)):
                     # Add Email to List
-                    self.__Emails.append(Email.text)
+                    self.__Emails.append(Email.text + "\n")
         except Exception:
             pass
 
