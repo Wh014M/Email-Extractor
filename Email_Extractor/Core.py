@@ -18,7 +18,7 @@ class Core(object):
             self.__Get_Links.Search_Links(_URL)
             print("\n>>> [" + _URL + "]")
             for Link in tqdm(
-                set(self.__Get_Links._Get_Links__All_Links), desc=">>> "):
+                    set(self.__Get_Links._Get_Links__All_Links), desc=">>> "):
                 # True if the link starts with HTTP or WWW
                 if Link.startswith(("http", "www")):
                     # Get HTML
