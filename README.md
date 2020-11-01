@@ -29,7 +29,7 @@ Free utility to extract email address by scanning a given URL
 ```
 pip install -r requirements.txt
 
-python Email_Extractor.py
+python Email_Extractor.py URL.txt
 ```
 
 ## 📷 Screenshot:
